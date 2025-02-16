@@ -1,3 +1,39 @@
+const container = document.querySelector('#articles-container');
+
+function displayArticles() {
+  articles.forEach(article => {
+    const articleElement = document.createElement('section');
+    articleElement.classList.add('book-review');
+
+    articleElement.innerHTML = `
+      <aside class="book-details">
+        <div class="date">
+		<p>Date: ${article.date}</p>
+		</div>
+		<div class="range">
+        <p>Age Range: ${article.ages}</p>
+		</div>
+		<div class="genre">
+        <p>Genre: ${article.genre}</p>
+		</div>
+		<div class="rating">
+        <p>Rating: ${article.stars}</p>
+		</div>
+      </aside>
+      <div class="book-content">
+        <h2>${article.title}</h2>
+        <div class="book-cover">
+          <img class="book-cover-img" src="${article.imgSrc}" alt="${article.imgAlt}">
+        </div>
+        <p>${article.description}</p>
+      </div>
+    `;
+    container.appendChild(articleElement);
+  });
+}
+
+window.addEventListener('DOMContentLoaded', displayArticles);
+
 const articles = [
 	{
 		id: 1,
@@ -9,12 +45,12 @@ const articles = [
 		imgAlt: 'Book cover for Septimus Heap 1',
 		ages: '10-14',
 		genre: 'Fantasy',
-		stars: '****'
+		stars: '⭐⭐⭐⭐'
 	},
 	{
 		id: 2,
 		title: 'Magnus Chase Book One: Sword of Summer',
-		date: 'December 12, 2021',
+		date: 'Dec. 12, 2021',
 		description:
 			'The anticipated new novel by Rick Riordan. After Greek mythology (Percy Jackson), Greek/Roman (Heroes of Olympus), and Egyptian (Kane Chronicles), Rick decides to try his hand with Norse Mythology, and the end result is good.',
 		imgSrc:
@@ -23,5 +59,18 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
-	}
-]
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb. 12, 2022",
+		description:
+		  "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc:
+		  "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
+	  }
+]	

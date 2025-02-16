@@ -19,7 +19,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -38,6 +38,12 @@ nav ul li a {
     margin: 20px;
 }
 
+.content-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    display: grid;
+}
+
 .book-review {
     display: flex;
     justify-content: space-around;
@@ -46,16 +52,55 @@ nav ul li a {
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-column: 1/3;
+}
+
+.book-review2{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-column: 1/3;
 }
 
 .book-details {
     flex: 1;
     padding: 10px;
+    text-align: right;
+    border-right: solid black 2px;
 }
 
 .book-content {
     flex: 2;
     padding: 10px;
+    justify-items: center;
+}
+
+h2{
+    margin-top: 10px;
+}
+
+.date{
+    font-size: large;
+}
+
+.range{
+    font-size: small;
+}
+
+.genre{
+    font-size: small;
+}
+
+.rating{
+    font-size: small;
+}
+
+p{
+    margin-bottom: 5px;
 }
 
 .book-cover {
@@ -85,6 +130,9 @@ nav ul li a {
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 1/4;
 }
 
 .filters label {
