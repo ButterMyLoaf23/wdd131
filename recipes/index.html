@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -19,45 +19,7 @@
             <button type="submit">Search</button>
         </form>
         
-        <section class="recipe">
-            <h2>Sweet Potato Waffles</h2>
-            <img src="images/images/sweet-potato-waffle-md.jpg" alt="Sweet Potato Waffles">
-            <p>Savory waffles made with sweet potato with a hint of ginger.</p>
-            <p><strong>Prep Time:</strong> 30 Min | <strong>Cook Time:</strong> 30 Min | <strong>Servings:</strong> 6 waffles</p>
-            
-            <h3>Ingredients:</h3>
-            <ul>
-                <li>2 separated eggs</li>
-                <li>1/4 C Oil</li>
-                <li>1/4 tsp salt</li>
-                <li>1/4 tsp Cayenne pepper</li>
-                <li>3/4 C milk</li>
-                <li>1 Tbsp Brown Sugar</li>
-                <li>2 tsp Shredded Ginger</li>
-                <li>3/4 C Mashed Sweet Potatoes</li>
-                <li>1 Tbsp Minced Shallots</li>
-                <li>1 Tbsp Baking Powder</li>
-                <li>1 Tbsp Chives</li>
-                <li>1/4 C Cornmeal</li>
-                <li>1 C Flour</li>
-            </ul>
-            
-            <h3>Instructions:</h3>
-            <ol>
-                <li>Mix egg yolks, oil, salt, cayenne, sugar, ginger, shallots, sweet potatoes, and milk.</li>
-                <li>Add cornmeal, chives, flour, and baking powder.</li>
-                <li>Whip egg whites until stiff and fold in.</li>
-                <li>Cook until golden brown in a waffle iron. Serve with butter and wilted greens or honey.</li>
-            </ol>
-            
-            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">⭐</span>
-                <span aria-hidden="true">☆</span>
-            </span>
-        </section>
+        <section id="recipes-container"></section>
     </main>
     
     <footer>
