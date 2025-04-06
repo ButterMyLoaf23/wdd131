@@ -7,6 +7,10 @@ body {
     padding: 20px;
 }
 
+.logo{
+    width: 150px;
+}
+
 h1, h2 {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 10px;

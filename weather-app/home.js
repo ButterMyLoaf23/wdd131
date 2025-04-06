@@ -86,4 +86,3 @@ document.getElementById("cityInput").addEventListener("keydown", function (event
         getWeather();
     }
 });
-

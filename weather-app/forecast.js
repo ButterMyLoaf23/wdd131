@@ -56,7 +56,7 @@ function getForecast(city, region) {
             const forecastDiv = document.getElementById('forecast');
             forecastDiv.innerHTML = '';
 
-            const locationHTML = `<h2>Weather Forecast for ${city}${state ? ', ' + state : ''}, ${country}</h2>`;
+            const locationHTML = `<h2>5 Day Weather Forecast for ${city}${state ? ', ' + state : ''}, ${country}</h2>`;
             forecastDiv.innerHTML += locationHTML;
 
             const filteredData = data.list.filter((item, index) => index % 8 === 0);
