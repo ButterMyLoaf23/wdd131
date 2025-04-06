@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickWeather</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>W.T.F.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="home.js" defer></script>
 </head>
 <body>
-    <h1>QuickWeather</h1>
-    <input type="text" id="cityInput" placeholder="Enter city name">
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="weather"></div>
-    <br>
-    <a href="forecast.html"><button>See 5-Day Forecast</button></a>
+  <div class="container">
+    <h1 class="app-title">W.T.F. (What's The Forecast?)</h1>
+    
+    <div class="search-area">
+      <label for="cityInput">Enter City Name:</label>
+      <input type="text" id="cityInput" placeholder="City, State or Country" />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div id="weather" class="weather-display"></div>
+
+    <div class="forecast-link">
+      <p>5-Day Forecast --></p>
+      <a href="forecast.html"><button>Go</button></a>
+    </div>
+  </div>
+
 </body>
 </html>

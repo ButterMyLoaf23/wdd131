@@ -108,4 +108,3 @@ document.getElementById('searchCity').addEventListener('keydown', function (even
     }
 });
 
-getForecast('Phoenix', 'AZ');
